@@ -1,17 +1,17 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Token Radar ranks pre-token DeFi protocols by implied value, from a sealed DefiLlama snapshot, and shows how to farm each one.">
-<title>Token Radar — pre-token protocols, ranked by implied value</title>
-<link rel="stylesheet" href="app.css">
-</head>
-<body>
-<a class="skip" href="#board">Skip to the board</a>
-<main id="board" tabindex="-1" aria-busy="true"></main>
-<noscript><p class="noscript">Token Radar needs JavaScript: the board, its filters and every detail view are rendered in this page from its own data file.</p></noscript>
-<script src="../data.js"></script>
-<script src="app.js"></script>
-</body>
-</html>
+<!DOCTYPE html><!-- Token Radar: a static dashboard, no network -->
+<html lang="en"><head>
+  <meta charset="utf-8"><!-- utf-8 -->
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta name="description"
+    content="Token Radar ranks pre-token DeFi protocols by implied value, from a sealed DefiLlama snapshot, and shows how to farm each one.">
+  <title>Token Radar — pre-token protocols, ranked by implied value</title><!-- page title -->
+  <link href="app.css" rel="stylesheet"></head>
+<body><!-- the app renders into #board -->
+  <a href="#board" class="skip">Skip to the board</a>
+  <main tabindex="-1" id="board" aria-busy="true"></main>
+  <noscript>
+    <p class="noscript">Token Radar needs JavaScript: the board, its filters and every detail view are rendered in this page from its own data file.</p>
+  </noscript>
+  <!-- data.js first: it defines window.RADAR, which app.js reads to render the board. -->
+  <script src="../data.js"></script><script src="app.js"></script>
+</body></html>
